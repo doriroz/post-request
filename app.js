@@ -30,6 +30,8 @@ app.post("/addTodo",function(req,res){
 app.get("/todo",function(req,res){
 	res.render("todo",{todo:todo});
 })
-app.listen(3000,function(req,res){
-	console.log("Server is started !!!");
-})
+
+app.listen(process.env.PORT,process.env.IP);
+// app.listen(3000,function(req,res){
+// 	console.log("Server is started !!!");
+// })
