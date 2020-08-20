@@ -1,0 +1,11 @@
+<h1>
+	First list todo assign !!!
+</h1>
+<%todo.forEach(function(todo){%>
+<li><%= todo %></li>
+<%});%>
+
+<form action="/addTodo" method="POST">
+	<input type="text" name="newTodo" placeholder="New todo">
+	<button>Add New Todo</button>
+</form>
