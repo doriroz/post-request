@@ -31,7 +31,9 @@ app.get("/todo",function(req,res){
 	res.render("todo",{todo:todo});
 })
 
-app.listen(process.env.PORT,process.env.IP);
+const host = '0.0.0.0';
+app.listen(process.env.PORT || 3000,host);
+// app.listen(process.env.PORT || 3000,process.env.IP);
 // app.listen(3000,function(req,res){
 // 	console.log("Server is started !!!");
 // })
